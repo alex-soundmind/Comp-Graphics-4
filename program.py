@@ -127,8 +127,7 @@ ax.plot(
     c="k",
 )
 
-# New points for the cube
-scale_factor = 0.5  # adjust this value to change the size of the cube
+scale_factor = 0.5
 X_cube = []
 Y_cube = []
 Z_cube = []
@@ -149,7 +148,6 @@ for pair in points:
 
 ax.set_box_aspect(aspect=(1, 1, 1))
 
-# Plot connecting lines for the cube
 ax.plot([X_cube[0], X_cube[1]], [Y_cube[0], Y_cube[1]], [Z_cube[0], Z_cube[1]], c="gray")
 ax.plot([X_cube[1], X_cube[2]], [Y_cube[1], Y_cube[2]], [Z_cube[1], Z_cube[2]], c="gray")
 ax.plot([X_cube[2], X_cube[3]], [Y_cube[2], Y_cube[3]], [Z_cube[2], Z_cube[3]], c="gray")
